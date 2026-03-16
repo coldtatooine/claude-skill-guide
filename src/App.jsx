@@ -1,3 +1,4 @@
+import { LangProvider } from './i18n/LangContext'
 import { Nav } from './sections/Nav'
 import { Hero } from './sections/Hero'
 import { Fundamentals } from './sections/Fundamentals'
@@ -12,7 +13,7 @@ import { Footer } from './sections/Footer'
 
 function App() {
   return (
-    <>
+    <LangProvider>
       <Nav />
       <Hero />
       <Fundamentals />
@@ -24,7 +25,7 @@ function App() {
       <Resources />
       <QuickChecklist />
       <Footer />
-    </>
+    </LangProvider>
   )
 }
 

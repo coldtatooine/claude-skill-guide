@@ -1,6 +1,11 @@
 import { motion } from 'framer-motion'
+import { useLang } from '../i18n/LangContext'
+import { t } from '../i18n/translations'
 
 export function Footer() {
+  const { lang } = useLang()
+  const tr = t[lang].footer
+
   return (
     <motion.footer
       className="footer"
@@ -9,14 +14,14 @@ export function Footer() {
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
     >
-      <div className="footer-title">The Complete Guide to Building Skills for Claude</div>
+      <div className="footer-title">{tr.title}</div>
       <div className="footer-divider" />
-      <p>Anthropic — January 2026</p>
+      <p>{tr.company}</p>
       <p style={{ marginTop: 8, fontSize: '0.8rem' }}>
-        Cover the full cycle: Fundamentals · Planning &amp; Design · Testing &amp; Iteration · Distribution · Patterns · Troubleshooting · Resources
+        {tr.cycle}
       </p>
       <p style={{ marginTop: 16, fontSize: '0.78rem', opacity: 0.5 }}>
-        See also: claude.ai
+        {tr.seeAlso}
       </p>
     </motion.footer>
   )

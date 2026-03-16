@@ -153,6 +153,48 @@ p {
 
 .nav-links::-webkit-scrollbar { display: none; }
 
+/* LANG SWITCHER */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  transition: color 0.2s, background 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+
+.lang-btn:hover {
+  color: var(--color-accent);
+  background: var(--color-accent-dim);
+  border-color: var(--color-border);
+}
+
+.lang-btn--active {
+  color: var(--color-accent);
+  background: var(--color-accent-dim);
+  border-color: var(--color-border);
+  font-weight: 600;
+}
+
+.lang-flag { font-size: 0.95rem; line-height: 1; }
+.lang-label { letter-spacing: 0.04em; }
+
 .nav a {
   text-decoration: none;
   color: var(--color-text-muted);
