@@ -1,82 +1,82 @@
 # The Complete Guide to Building Skills for Claude
 
-Uma landing page interativa do guia oficial da Anthropic para criação de Skills para o Claude — com design inspirado na identidade visual da Anthropic, suporte a três idiomas e animações fluidas.
+An interactive landing page based on Anthropic's official guide for building Skills for Claude — featuring a design inspired by Anthropic's visual identity, three-language support, and smooth animations.
 
-🔗 **[Ver a página ao vivo](https://coldtatooine.github.io/claude-skill-guide/)**
-
----
-
-## Sobre
-
-Este projeto transforma o PDF oficial *"The Complete Guide to Building Skills for Claude"* em uma experiência web estruturada, navegável e visualmente sofisticada.
-
-O conteúdo cobre todo o ciclo de vida de uma Skill:
-
-- **Fundamentos** — o que é uma Skill e como ela funciona
-- **Planejamento** — como desenhar uma Skill eficaz
-- **Testes** — validação e iteração
-- **Distribuição** — publicação e compartilhamento
-- **Padrões avançados** — boas práticas e casos de uso
-- **Troubleshooting** — erros comuns e como resolvê-los
-- **Recursos e Checklist** — referências finais
+🔗 **[View the live page](https://coldtatooine.github.io/claude-skill-guide/)**
 
 ---
 
-## Pipeline de geração
+## About
+
+This project transforms the official PDF *"The Complete Guide to Building Skills for Claude"* into a structured, navigable, and visually polished web experience.
+
+The content covers the full lifecycle of a Skill:
+
+- **Fundamentals** — what a Skill is and how it works
+- **Planning** — how to design an effective Skill
+- **Testing** — validation and iteration
+- **Distribution** — publishing and sharing
+- **Advanced Patterns** — best practices and use cases
+- **Troubleshooting** — common errors and how to fix them
+- **Resources & Checklist** — final references
+
+---
+
+## Generation Pipeline
 
 ```
-PDF oficial (Anthropic)
+Official PDF (Anthropic)
         ↓
-  Claude Code (skill doc-to-page)
+  Claude Code (doc-to-page skill)
         ↓
-  React + Vite (estrutura e componentes)
+  React + Vite (structure and components)
         ↓
-  Anthropic design system (cores, tipografia, tokens CSS)
+  Anthropic design system (colors, typography, CSS tokens)
         ↓
   i18n PT-BR / ES-MX / EN-US
         ↓
-  GitHub Pages (deploy automático via gh-pages)
+  GitHub Pages (automated deploy via gh-pages)
 ```
 
 ---
 
-## Stack
+## Tech Stack
 
-| Camada | Tecnologia |
-|--------|-----------|
+| Layer | Technology |
+|-------|-----------|
 | Framework | React 19 + Vite 7 |
-| Animações | Framer Motion |
-| i18n | React Context API (sem dependências externas) |
-| Tipografia | Lora (serif) · Space Grotesk · JetBrains Mono |
+| Animations | Framer Motion |
+| i18n | React Context API (no external dependencies) |
+| Typography | Lora (serif) · Space Grotesk · JetBrains Mono |
 | Deploy | `gh-pages` → GitHub Pages |
 
 ---
 
-## Idiomas suportados
+## Supported Languages
 
-| Código | Idioma |
-|--------|--------|
-| `en` | English (EN) 🇺🇸 |
-| `pt-BR` | Português Brasileiro 🇧🇷 |
-| `es-MX` | Español (México) 🇲🇽 |
+| Code | Language |
+|------|----------|
+| `en` | English 🇺🇸 |
+| `pt-BR` | Brazilian Portuguese 🇧🇷 |
+| `es-MX` | Spanish (Mexico) 🇲🇽 |
 
-A seleção de idioma fica no canto direito do header — persiste durante a navegação e afeta todo o conteúdo da página.
+The language selector is in the top-right corner of the header — it persists during navigation and affects all page content.
 
 ---
 
 ## Design
 
-Inspirado no design system de [anthropic.com](https://www.anthropic.com/):
+Inspired by the [anthropic.com](https://www.anthropic.com/) design system:
 
-- **Fundo:** ivory quente `#faf9f5` em vez de branco puro
-- **Acento:** clay/terracota `#d97757` — memorável e único
-- **Tipografia:** Lora serif no corpo (humanidade) + Space Grotesk sans-serif nos títulos (autoridade)
-- **Animações:** lentas e elegantes, scroll reveal com `opacity` + `translateY`
-- **Borders:** ultra-sutis `rgba(20,20,19,0.10)`
+- **Background:** warm ivory `#faf9f5` instead of plain white
+- **Accent:** clay/terracotta `#d97757` — memorable and distinctive
+- **Typography:** Lora serif for body text (humanity) + Space Grotesk sans-serif for headings (authority)
+- **Animations:** slow and elegant, scroll reveal with `opacity` + `translateY`
+- **Borders:** ultra-subtle `rgba(20,20,19,0.10)`
 
 ---
 
-## Como rodar localmente
+## Running Locally
 
 ```bash
 git clone https://github.com/coldtatooine/claude-skill-guide.git
@@ -85,7 +85,7 @@ npm install
 npm run dev
 ```
 
-Para fazer deploy:
+To deploy:
 
 ```bash
 npm run deploy
@@ -93,11 +93,11 @@ npm run deploy
 
 ---
 
-## Créditos
+## Credits
 
-- Gerado por **[Ale Lima](https://www.linkedin.com/in/alessandroflima/)** ([@coldtatooine](https://github.com/coldtatooine)) com **[Claude Code](https://claude.ai/code)**
-- Conteúdo baseado no **[guia oficial da Anthropic](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf)**
+- Built by **[Ale Lima](https://www.linkedin.com/in/alessandroflima/)** ([@coldtatooine](https://github.com/coldtatooine)) with **[Claude Code](https://claude.ai/code)**
+- Content based on the **[official Anthropic guide](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf)**
 
 ---
 
-*Este projeto foi construído inteiramente com Claude Code — da extração do PDF à implementação do design system, i18n e deploy.*
+*This project was built entirely with Claude Code — from PDF extraction to design system implementation, i18n, and deployment.*
