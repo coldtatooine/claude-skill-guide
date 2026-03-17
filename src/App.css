@@ -755,6 +755,18 @@ p {
   color: rgba(250,249,245,0.42);
   font-family: var(--font-heading);
 }
+.footer-link {
+  color: rgba(250,249,245,0.55);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(217,119,87,0.4);
+  transition: color 0.18s, text-decoration-color 0.18s;
+}
+.footer-link:hover {
+  color: var(--color-accent-light);
+  text-decoration-color: var(--color-accent);
+}
+
 .footer-divider {
   width: 40px;
   height: 2px;
